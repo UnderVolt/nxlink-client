@@ -1,0 +1,22 @@
+{
+  "name": "nxlink-client",
+  "version": "0.1",
+  "description": "",
+  "main": "src/main.js",
+  "author": "@Lywx",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node bin/src/main.js",
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec \"npm run build && npm run start\" --watch src --ext ts"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6"
+  }
+}
